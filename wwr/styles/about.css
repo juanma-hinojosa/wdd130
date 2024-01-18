@@ -70,3 +70,8 @@ section {
 section img {
     width: 300px;
 }
+
+footer img {
+    width: 50px;
+    height: auto;
+}
