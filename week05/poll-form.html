@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Poll Form</title>
+        <meta name="description" content="Description sobre Input">
+        <meta name="author" content="Juan Hinojosa">
+
+        <link rel="stylesheet" href="styles/poll-form.css">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-item column2">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div class="form-item column2">
+                        <label for="email">Email</label>
+                        <input type="email" name="useremail" id="useremail">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Questions</legend>
+                    <div class="column1">
+                        <label for="browser">What is your favorite internet
+                            browser?</label>
+                        <select name="browser" id="browser">
+                            <option value="chrome">Chrome</option>
+                            <option value="firefox">firefox</option>
+                            <option value="safari">safari</option>
+                            <option value="edge">edge</option>
+                            <option value="brave">brave</option>
+                            <option value="other">other</option>
+                        </select>
+                    </div>
+                    <div class="column1">
+                        <label for="pet">Do you have a househol pet?</label>
+                        <input type="checkbox" name="pet" id="pet">
+                    </div>
+
+                    <label for="feedback">List the places you have
+                        lived</label>
+                    <textarea name="feedback" id="feedback" rows="4"
+                        placeholder="Still Florida, Amsterdam Netherlands, Tibuko Mali"></textarea>
+
+                </fieldset>
+
+                <button type="submit">Submit Poll</button>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
