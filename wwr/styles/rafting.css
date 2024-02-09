@@ -1,144 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-:root {
-    --principal-font: 'Poppins', sans-serif;
-}
-
-body {
-    font-family: var(--principal-font);
-}
-
-
-
-ul {
-    list-style: none;
-    display: flex;
-}
-
-li {
-    margin-left: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(72, 63, 63);
-    font-size: 20px;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    top: 0px;
-    position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.451);
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-}
-
-
-.hero article {
-    top: 130px;
-    left: 100px;
-    width: 80%;
-    position: absolute;
-    background-color: rgba(43, 79, 101, 0.532);
-    padding: 20px;
-    color: aliceblue;
-}
-
-.hero article img {
-    width: 200px;
-    height: auto;
-    float: right;
-}
-
-section h2 {
-    color: cornflowerblue;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-}
-
-section img {
-    width: 150px;
-}
-
-footer img {
-    width: 50px;
-    height: auto;
-}
-
-/* navbar */
-
-
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-}
-
-img {
-    width: 100px;
-    height: auto;
-}
-
-.galery {
-    text-align: center;
-}
-
-.galery section {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 5px;
-    grid-auto-rows: minmax(500px, auto);
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-}
-
-section figcaption {
-    text-align: center;
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: aqua;
-    text-align: center;
-
-}
-
-footer p {
-    text-align: center;
-    margin-right: 300px;
-}
-
-.links {
-    display: flex;
-    flex: right;
-}
-
-section {
-    text-align: center;
-}
-
 /* Contact Page Styles */
 
-/* 
+
 .company-information {
     padding: 100px;
     background-color: rgb(19, 17, 17);
@@ -170,6 +32,11 @@ section {
     width: 100%;
 }
 
+/* iframe {
+    width: "100%";
+    height: "350px";
+} */
+
 .employees>div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -199,15 +66,16 @@ section {
         object-fit: cover;
         object-position: center center;
     }
-} */
+}
 
 /* estilos formularios contact */
 
-/* .form-wrapper{
+.form-wrapper {
     background-color: rgb(19, 17, 17);
     color: rgb(19, 17, 17);
     padding: 50px 0;
 }
+
 form {
     width: 650px;
     margin: 0 auto;
@@ -271,14 +139,15 @@ button {
 
 button:hover {
     background-color: darkgreen;
-} */
+}
 
 /* responsive design */
-/* 
+
 @media (max-width: 800px) {
     .company-information {
         padding: 10px;
     }
+
     .company-information>div {
         padding: 0;
         width: 100%;
@@ -291,10 +160,11 @@ button:hover {
         justify-content: center;
     }
 
-    .company-information>div>ul>li{
+    .company-information>div>ul>li {
         text-align: center;
     }
+
     form {
         width: 100%;
     }
-} */
+}
