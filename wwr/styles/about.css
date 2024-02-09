@@ -135,3 +135,166 @@ footer p {
 section {
     text-align: center;
 }
+
+/* Contact Page Styles */
+
+
+.company-information {
+    padding: 100px;
+    background-color: rgb(19, 17, 17);
+    color: #eee;
+}
+
+.company-information>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 10px;
+    padding-inline: 50px;
+}
+
+.company-information>div>ul {
+    display: grid;
+    height: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 10px;
+    padding: 0;
+    align-items: center;
+    justify-items: start;
+}
+
+.company-information>div>ul>li {
+    margin: 0;
+}
+
+.company-information>div>map {
+    width: 100%;
+}
+
+.employees>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+}
+
+.employees>div>figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employees>div>figcaption>figure {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.employees>div>figcaption>figure>img {
+    height: 100%;
+}
+
+@supports(object-fit: cover) {
+    .employees>div>figcaption>figure>img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+/* estilos formularios contact */
+
+.form-wrapper{
+    background-color: rgb(19, 17, 17);
+    color: rgb(19, 17, 17);
+    padding: 50px 0;
+}
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: .5rem;
+    color: navy;
+    font-size: 1.3rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: left;
+    padding: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    resize: none;
+}
+
+input[type='checkbox'] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* responsive design */
+
+@media (max-width: 800px) {
+    .company-information {
+        padding: 10px;
+    }
+    .company-information>div {
+        padding: 0;
+        width: 100%;
+    }
+
+    .company-information>div>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .company-information>div>ul>li{
+        text-align: center;
+    }
+    form {
+        width: 100%;
+    }
+}
