@@ -114,10 +114,11 @@ section figcaption {
 }
 
 footer {
+    color: #ccc;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(37, 77, 77);
     text-align: center;
 
 }

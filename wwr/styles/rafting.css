@@ -168,3 +168,97 @@ button:hover {
         width: 100%;
     }
 }
+
+/* Tips Styles */
+
+/* info contact */
+.trips-info {
+    /* display: block; */
+    text-align: left;
+}
+
+.trips-info>.link {
+    width: 140px;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trips-info>.link>a {
+    width: 100%;
+    text-align: center;
+    color: #eee;
+    transition: .3s;
+    font-size: 1rem;
+}
+
+.trips-info>.link>a:hover {
+    background-color: rgb(6, 6, 165);
+}
+
+/* travels cards */
+section>.travels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    /* padding-inline: 50px; */
+}
+
+section>.travels>figure {
+    border: 1px solid rgb(238, 227, 227);
+    padding: 1rem;
+    transition: .3s;
+}
+
+section>.travels>figure:hover {
+    box-shadow: 4px 9px 5px 0px rgba(230, 213, 213, 0.75);
+    -webkit-box-shadow: 4px 9px 5px 0px rgba(230, 213, 213, 0.75);
+    -moz-box-shadow: 4px 9px 5px 0px rgba(230, 213, 213, 0.75);
+}
+
+section>.travels>figure>img {
+    width: 100%;
+}
+
+/* Table Styles */
+
+.table-hour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    max-width: 900px;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead,
+tfoot {
+    background-color: rgb(228 240 245);
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
