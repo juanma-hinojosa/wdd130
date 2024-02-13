@@ -130,7 +130,7 @@ footer p {
 
 .links {
     display: flex;
-    flex: right;
+    /* flex: right; */
 }
 
 section {
