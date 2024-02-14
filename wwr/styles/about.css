@@ -153,6 +153,12 @@ footer {
 footer p {
     text-align: center;
     margin-right: 300px;
+    color: #ccc;
+}
+
+footer p > a {
+    color: #ccc;
+    text-decoration: underline;   
 }
 
 .links {
