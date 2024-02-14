@@ -10,7 +10,7 @@ body {
 
 
 
-ul {
+/* ul {
     list-style: none;
     display: flex;
 }
@@ -23,6 +23,23 @@ a {
     text-decoration: none;
     color: rgb(72, 63, 63);
     font-size: 20px;
+} */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:50px;
+    list-style: none;
+}
+
+a {
+    color: rgb(37, 77, 77);
+    text-decoration: none;
 }
 
 .hero {
@@ -71,8 +88,18 @@ section {
     flex-direction: column;
 }
 
-section img {
-    width: 150px;
+.galery > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 50px;
+}
+
+section > figure {
+    width: 100%;
+}
+
+section > figure > img{
+    width: 100%;
 }
 
 footer img {
